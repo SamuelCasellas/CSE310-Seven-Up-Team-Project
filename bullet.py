@@ -10,7 +10,7 @@ class Bullet():
         self.img = pygame.transform.rotate(pygame.transform.scale(self.image, self.size), 270)
         self.x = x
         self.y = y
-        self.vel = 5
+        self.vel = 45
         self.mask = self.mask = pygame.mask.from_surface(self.img)
       
 

@@ -38,6 +38,8 @@ class Director():
 
 
     def start_game(self):
+        MUSIC.load('Assets/Sounds/微微一笑很倾城.mp3')
+        pygame.mixer.Channel(1).play(pygame.mixer.Sound("Assets/Sounds/微微一笑很倾城.mp3"), loops=-1)
         display.draw_window
         clock = pygame.time.Clock()  
         clock.tick(FPS)
@@ -70,7 +72,7 @@ class Director():
 
             # Check for asteroid colliding with station
             for asteroid in self.asteroid_list[:]:
-                if station.space_station_collide(asteroid):
+                if station.space_station_collide(asteroid) and not asteroid.destroyed:
                     MUSIC.load("Assets/Sounds/Explosion_03.wav")
                     MUSIC.play()
                     self.asteroid_list.remove(asteroid)

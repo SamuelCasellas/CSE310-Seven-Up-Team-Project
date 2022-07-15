@@ -38,7 +38,7 @@ STATS_FONT = pygame.font.SysFont("Comic Sans Ms", 35)
 FONT = pygame.font.SysFont('Arial', 40)
 
 FPS = 60
-ASTEROID_VEL = 1
+ASTEROID_VEL = 1.25
 BORDER_DISTANCE = 0 #to spawn asteroids in the borders of the game
 LETTER_SIZE = 5 #for use in asteroids
 
