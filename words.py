@@ -87,7 +87,7 @@ class Word(Problem):
 
 
   def get_word(self, difficulty):
-      '''Gets a random word from the list and returns it to director.'''
+      """Gets a random word from the list and returns it to director."""
       word = random.choice(self.word_list)
       if difficulty == "easy":
         while len(word) > 4:
